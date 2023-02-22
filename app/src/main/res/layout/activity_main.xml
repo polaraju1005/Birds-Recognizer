@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="#cfcfcf"
+        android:src="@drawable/placeholder" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/btnUpload"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgUpload"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Upload Image"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/btnCapture"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgUpload"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toEndOf="@+id/btnUpload"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Take Image"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpload"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Result:"
+        android:textColor="#d32f2f"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpload"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/txtResult"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Output will be displayed here"
+        android:textColor="#4527a0"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtClickHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Click on the text to search on google"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/txtAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:text="by sai"
+        android:textColor="#7953d2"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
