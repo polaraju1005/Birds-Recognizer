@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/centerColorOnBoard"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgSplash"
+        android:src="@drawable/bird"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Birds Recognizer"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/startColorOnboard"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgSplash"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>

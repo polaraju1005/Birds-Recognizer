@@ -49,4 +49,7 @@ dependencies {
     //tensorflow dependency
     implementation 'org.tensorflow:tensorflow-lite-support:0.1.0'
     implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0'
+
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
 }

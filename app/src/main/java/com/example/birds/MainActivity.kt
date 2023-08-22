@@ -21,6 +21,7 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.content.contentValuesOf
 import com.example.birds.databinding.ActivityMainBinding
@@ -31,9 +32,10 @@ import java.io.IOException
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var imageView: ImageView
-    private lateinit var button: Button
+    private lateinit var button: CardView
     private lateinit var output: TextView
     private val GALLERY_REQUEST_CODE = 123
+    private lateinit var button2:CardView
 
     @SuppressLint("IntentReset")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,7 +48,7 @@ class MainActivity : AppCompatActivity() {
         button = binding.btnCapture
         output = binding.txtOutput
 
-        val buttonLoad = binding.btnUpload
+        button2 = binding.btnUpload
 
         button.setOnClickListener {
             if (ContextCompat.checkSelfPermission(
@@ -59,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 requestPermission.launch(android.Manifest.permission.CAMERA)
             }
         }
-        buttonLoad.setOnClickListener {
+        button2.setOnClickListener {
             if (ContextCompat.checkSelfPermission(
                     this,
                     android.Manifest.permission.READ_EXTERNAL_STORAGE

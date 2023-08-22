@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="startColorOnboard">#053673</color>
+    <color name="centerColorOnBoard">#D9D9D9</color>
+    <color name="endColorOnBoard">#FAAB53</color>
 </resources>
