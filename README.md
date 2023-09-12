@@ -11,5 +11,5 @@ The app is designed with simplicity and usability in mind. The intuitive interfa
 Birds Recognizer uses a state-of-the-art Deep Learning model trained on a vast dataset of bird images. When you take a photo of a bird, the app sends the image to the model, which rapidly analyzes its features and compares them to its extensive database. The app then provides you with the most likely species identification along with relevant information.
 ## Feedback
 We value your feedback! If you have any suggestions, encounter issues, or want to contribute to the project, please don't hesitate to open an issue or submit a pull request on our GitHub repository.
-
+#
 Follow me for more projects and dont forget to Give a ⭐ if you like this application!
